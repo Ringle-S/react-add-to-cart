@@ -14,8 +14,8 @@ const Home = ({ cart, setCart }) => {
 
   return (
     <>
-      <h1 className="text-3xl my-5">Products List</h1>
-      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5 ">
+      <h1 className="text-3xl my-5 px-5">Products List</h1>
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5  px-5">
         {products.map((product) => (
           <div key={product.id} className="bg-white p-5 rounded-xl shadow-sm">
             <img
@@ -29,7 +29,7 @@ const Home = ({ cart, setCart }) => {
             </h3>
             <div className="flex justify-between items-center px-24">
               <p>
-                $<span className="text-2xl font-medium">{product.price}</span>
+                ₹<span className="text-2xl font-medium">{product.price}</span>
               </p>
 
               {cart.includes(product) ? (

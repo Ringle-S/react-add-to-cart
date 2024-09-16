@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import iconCart from "../assets/iconCart.png";
 import { Cart } from "./Cart";
 
-export const Header = ({ cart, setCart }) => {
+export const Header = ({ cart, setCart, quantity, setQuantity }) => {
   const [showcart, setShowcart] = useState(false);
   const cartl = cart.length;
   const handleOpenTabCart = () => {
@@ -15,9 +15,9 @@ export const Header = ({ cart, setCart }) => {
 
   return (
     <>
-      <header className="flex justify-between items-center py-5  bg-zinc-200">
-        <Link to="/" className="text-xl font-semibold">
-          Home
+      <header className="flex justify-between items-center py-5  bg-zinc-800 px-10">
+        <Link to="/" className="text-2xl font-bold text-yellow-50">
+          FURINISHME
         </Link>
         <div
           className="w-10 h-10 bg-gray-100 rounded-full cursor-pointer
@@ -33,7 +33,15 @@ export const Header = ({ cart, setCart }) => {
           </span>
         </div>
       </header>
-      {showcart && <Cart status={showcart} cart={cart} setCart={setCart} />}
+      {showcart && (
+        <Cart
+          status={showcart}
+          cart={cart}
+          setCart={setCart}
+          quantity={quantity}
+          setQuantity={setQuantity}
+        />
+      )}
     </>
   );
 };
