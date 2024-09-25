@@ -19,7 +19,9 @@ export const CartItem = ({ cart, element }) => {
 
   //   setProductsCost([...productsCost, newProduct]);
   // };
-
+  const removeCart = (product) => {
+    setCart(cart.filter((c) => c.id !== product.id));
+  };
   const handleMinusQuantity = (i, price, quantity) => {
     setQuantity((e) => (e === 1 ? 1 : e - 1));
     const newProduct = { id: i, productPrice: price * quantity };
@@ -44,8 +46,8 @@ export const CartItem = ({ cart, element }) => {
     <>
       <div className="flex flex-col justify-between items-center bg-slate-600 text-white p-2 border-b-2 border-slate-700 gap-5 rounded-md">
         <div className="flex justify-between">
-          <img src={element.image} alt="" className="w-12" />
-          <div className="">
+          <img src={element.image} alt="" className="w-1/6" />
+          <div className="w-5/6">
             <h3>{element.name}</h3>
             <p className="text-xl">₹{element.price * quantity}</p>
           </div>

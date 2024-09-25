@@ -15,7 +15,7 @@ export const Header = ({ cart, setCart, quantity, setQuantity }) => {
 
   return (
     <>
-      <header className="flex justify-between items-center py-5  bg-zinc-800 px-10">
+      <header className="flex justify-between items-center py-5   bg-zinc-800 px-14">
         <Link to="/" className="text-2xl font-bold text-yellow-50">
           FURINISHME
         </Link>

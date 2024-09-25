@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="px-64 bg-zinc-200">
+        <div className=" bg-zinc-200">
           <Header cart={cart} setCart={setCart} />
           <Routes>
             <Route

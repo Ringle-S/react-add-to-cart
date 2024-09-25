@@ -14,44 +14,49 @@ const Home = ({ cart, setCart }) => {
 
   return (
     <>
-      <h1 className="text-3xl my-5 px-5">Products List</h1>
-      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5  px-5">
-        {products.map((product) => (
-          <div key={product.id} className="bg-white p-5 rounded-xl shadow-sm">
-            <img
-              src={product.image}
-              alt=""
-              className="w-full h-80 object-cover object-top drop-shadow-[0_80px_30px_#0007]"
-            />
+      <div className="px-2 md:px-12">
+        <h1 className="text-3xl my-5 px-5">Products List</h1>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2  sm:grid-cols-2 gap-5  px-5">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between gap-3"
+            >
+              <img
+                src={product.image}
+                alt=""
+                className="w-full h-80 object-contain object-top drop-shadow-[0_80px_30px_#0007]"
+              />
 
-            <h3 className="text-xl py-3 text-center font-medium">
-              {product.name}
-            </h3>
-            <div className="flex justify-between items-center px-24">
-              <p>
-                ₹<span className="text-2xl font-medium">{product.price}</span>
-              </p>
+              <h3 className="text-xl py-3 text-center font-medium">
+                {product.name}
+              </h3>
+              <div className="flex justify-between items-center xl:px-12">
+                <p>
+                  ₹<span className="text-2xl font-medium">{product.price}</span>
+                </p>
 
-              {cart.includes(product) ? (
-                <button
-                  onClick={() => removeCart(product)}
-                  className="bg-red-600 p-2 rounded-md text-sm  hover:bg-red-400 flex gap-2"
-                >
-                  <img src={iconCart} alt="" className="w-5" />
-                  Remove From Cart
-                </button>
-              ) : (
-                <button
-                  onClick={() => addCart(product)}
-                  className="bg-gray-300 p-2 rounded-md text-sm hover:bg-gray-400 flex gap-2"
-                >
-                  <img src={iconCart} alt="" className="w-5" />
-                  Add To Cart
-                </button>
-              )}
+                {cart.includes(product) ? (
+                  <button
+                    onClick={() => removeCart(product)}
+                    className="bg-red-600 text-white px-2 py-3 rounded-md text-sm  hover:bg-red-400 flex gap-2"
+                  >
+                    <img src={iconCart} alt="" className="w-5" />
+                    Remove From Cart
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => addCart(product)}
+                    className="bg-gray-300 text-white px-2 py-3 rounded-md text-sm hover:bg-gray-400 flex gap-2"
+                  >
+                    <img src={iconCart} alt="" className="w-5" />
+                    Add To Cart
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
