@@ -15,6 +15,7 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "hertfoid-upholstered-chair",
+    quantity: 101,
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "bingdon-pholstered-chair-swivel",
+    quantity: 151,
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "jeses-minimore-modern-style-etta",
+    quantity: 181,
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "eses-minimore-modern-style-zakari",
+    quantity: 201,
   },
   {
     id: 5,
@@ -51,6 +55,7 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "corrigan-studio-tufed-upholstered-wide-winback-armchair",
+    quantity: 251,
   },
   {
     id: 6,
@@ -60,6 +65,7 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "corrigan-studio-273-wide-armchair",
+    quantity: 111,
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "leston-wide-upholstered-fabric",
+    quantity: 121,
   },
   {
     id: 8,
@@ -78,5 +85,6 @@ export const products = [
     description:
       "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.",
     slug: "stephanny-275-wide-tufted-armchair",
+    quantity: 220,
   },
 ];

@@ -18,6 +18,7 @@ export const Cart = ({ status, cart, setCart, quantity, setQuantity }) => {
     <CartItem
       key={element.id}
       cart={cart}
+      setCart={setCart}
       element={element}
       quantity={quantity}
       setQuantity={setQuantity}
